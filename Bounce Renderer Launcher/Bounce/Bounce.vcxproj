@@ -94,11 +94,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="source\Core\BounceCore.h" />
-    <ClInclude Include="source\Core\Bounce.h" />
+    <ClInclude Include="source\Bounce\BounceLauncher.h" />
+    <ClInclude Include="source\Bounce\Core\BounceCore.h" />
+    <ClInclude Include="source\Bounce\Bounce.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\Core\BounceCore.cpp" />
+    <ClCompile Include="source\Bounce\Core\BounceCore.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

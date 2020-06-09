@@ -1,4 +1,15 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   BounceCore.cpp
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(5,27): warning C4273: 'bnc::BounceCore::BounceCore': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(16,3): message : see previous definition of '{ctor}'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(6,26): warning C4273: 'bnc::BounceCore::init': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(17,8): message : see previous definition of 'init'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(7,27): warning C4273: 'bnc::BounceCore::update': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(18,8): message : see previous definition of 'update'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(8,27): warning C4273: 'bnc::BounceCore::render': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(19,8): message : see previous definition of 'render'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(9,29): warning C4273: 'bnc::BounceCore::dispose': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(20,8): message : see previous definition of 'dispose'
+     Creating library C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.lib and object C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.exp
   Bounce.vcxproj -> C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.dll
