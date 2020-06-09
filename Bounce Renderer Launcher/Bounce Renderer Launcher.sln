@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bounce Renderer Launcher", "Bounce Renderer Launcher\Bounce Renderer Launcher.vcxproj", "{D355C020-ED1E-4011-A83D-A907EB2DCF2F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bounce", "Bounce\Bounce.vcxproj", "{4C21BE8A-C73D-4989-8207-46C0CE9BBA69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D355C020-ED1E-4011-A83D-A907EB2DCF2F}.Debug|x64.ActiveCfg = Debug|x64
+		{D355C020-ED1E-4011-A83D-A907EB2DCF2F}.Debug|x64.Build.0 = Debug|x64
+		{D355C020-ED1E-4011-A83D-A907EB2DCF2F}.Release|x64.ActiveCfg = Release|x64
+		{D355C020-ED1E-4011-A83D-A907EB2DCF2F}.Release|x64.Build.0 = Release|x64
+		{4C21BE8A-C73D-4989-8207-46C0CE9BBA69}.Debug|x64.ActiveCfg = Debug|x64
+		{4C21BE8A-C73D-4989-8207-46C0CE9BBA69}.Debug|x64.Build.0 = Debug|x64
+		{4C21BE8A-C73D-4989-8207-46C0CE9BBA69}.Release|x64.ActiveCfg = Release|x64
+		{4C21BE8A-C73D-4989-8207-46C0CE9BBA69}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CB4C065-D8CA-4080-807E-10BC4E6B4626}
+	EndGlobalSection
+EndGlobal
