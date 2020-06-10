@@ -47,13 +47,13 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)-$(SDKIDentifier)-x64\$(ProjectName)</OutDir>
     <IntDir>$(SolutionDir)bin-intermediate\$(Configuration)-$(SDKIDentifier)-x64\$(ProjectName)</IntDir>
-    <IncludePath>$(SolutionDir)outsourced\glfw\include\;$(SolutionDir)Bounce\source;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)outsourced\glfw\include\;$(SolutionDir)Bounce Renderer Launcher\source;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)-$(SDKIDentifier)-x64\$(ProjectName)</OutDir>
     <IntDir>$(SolutionDir)bin-intermediate\$(Configuration)-$(SDKIDentifier)-x64\$(ProjectName)</IntDir>
-    <IncludePath>$(SolutionDir)outsourced\glfw\include\;$(SolutionDir)Bounce\source;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(SolutionDir)outsourced\glfw\include\;$(SolutionDir)Bounce Renderer Launcher\source;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -62,19 +62,20 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)outsourced\stbimage;$(SolutionDir)outsourced\spdlog\include;$(SolutionDir)outsourced\glm;$(SolutionDir)Bounce\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)outsourced\stbimage;$(SolutionDir)outsourced\spdlog\include;$(SolutionDir)outsourced\glm;$(SolutionDir)Bounce Renderer Launcher\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)outsourced\glfw\lib-vc2017\;$(OutDir)..\Bounce\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Bounce.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)outsourced\glfw\lib-vc2017\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <PostBuildEvent>
-      <Command>xcopy /y /d "$(OutDir)..\Bounce\Bounce.dll" "$(OutDir)"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -86,30 +87,35 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)outsourced\stbimage;$(SolutionDir)outsourced\spdlog\include;$(SolutionDir)outsourced\glm;$(SolutionDir)Bounce\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)outsourced\stbimage;$(SolutionDir)outsourced\spdlog\include;$(SolutionDir)outsourced\glm;$(SolutionDir)Bounce Renderer Launcher\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)outsourced\glfw\lib-vc2017\;$(OutDir)..\Bounce\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Bounce.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)outsourced\glfw\lib-vc2017\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <PostBuildEvent>
-      <Command>xcopy /y /d "$(OutDir)..\Bounce\Bounce.dll" "$(OutDir)"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\Bounce\BounceLauncher.cpp" />
+    <ClCompile Include="source\Bounce\Core\BounceCore.cpp" />
+    <ClCompile Include="source\Bounce\Logging\Logger.cpp" />
     <ClCompile Include="source\Launcher.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bounce\Bounce.vcxproj">
-      <Project>{4c21be8a-c73d-4989-8207-46c0ce9bba69}</Project>
-    </ProjectReference>
+    <ClInclude Include="source\Bounce\Bounce.h" />
+    <ClInclude Include="source\Bounce\BounceLauncher.h" />
+    <ClInclude Include="source\Bounce\Core\BounceCore.h" />
+    <ClInclude Include="source\Bounce\Logging\Logger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
