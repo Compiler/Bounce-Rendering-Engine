@@ -99,6 +99,7 @@
     <ClInclude Include="source\Bounce\Bounce.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\Bounce\BounceLauncher.cpp" />
     <ClCompile Include="source\Bounce\Core\BounceCore.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

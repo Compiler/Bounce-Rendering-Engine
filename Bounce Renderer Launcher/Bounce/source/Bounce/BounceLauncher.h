@@ -8,16 +8,8 @@ namespace bnc {
 	class BOUNCE_API BounceLauncher {
 
 	public:
-		BounceLauncher() {}
-		void operator () () {
-			bnc::BounceCore runner;
-			runner.init();
-			
-			while (runner._isRunning) {
-				runner.update();
-				runner.render();
-			}
-		}
+		BounceLauncher();
+		char operator () ();
 	};
 
 }

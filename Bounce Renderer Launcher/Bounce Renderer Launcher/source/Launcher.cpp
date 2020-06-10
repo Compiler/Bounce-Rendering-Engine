@@ -1,12 +1,12 @@
 
 #include <iostream>
 
+#include <Bounce/Bounce.h>
 #include <Bounce/BounceLauncher.h>
 
 
 int main(){
 
-	bnc::BounceLauncher()();
-	std::cin.get();
-	return 0;
+	
+	return bnc::BounceLauncher()();
 }

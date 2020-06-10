@@ -1,15 +1,14 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  BounceCore.cpp
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(5,27): warning C4273: 'bnc::BounceCore::BounceCore': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(16,3): message : see previous definition of '{ctor}'
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(6,26): warning C4273: 'bnc::BounceCore::init': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(17,8): message : see previous definition of 'init'
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(7,27): warning C4273: 'bnc::BounceCore::update': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(18,8): message : see previous definition of 'update'
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(8,27): warning C4273: 'bnc::BounceCore::render': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(19,8): message : see previous definition of 'render'
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.cpp(9,29): warning C4273: 'bnc::BounceCore::dispose': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Core\BounceCore.h(20,8): message : see previous definition of 'dispose'
+  BounceLauncher.cpp
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.cpp(5,35): warning C4273: 'bnc::BounceLauncher::BounceLauncher': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.h(11,3): message : see previous definition of '{ctor}'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.cpp(6,36): warning C4273: 'bnc::BounceLauncher::operator ()': inconsistent dll linkage
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.h(12,8): message : see previous definition of '()'
      Creating library C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.lib and object C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.exp
+LINK : warning LNK4217: symbol '??0BounceCore@bnc@@QEAA@XZ (public: __cdecl bnc::BounceCore::BounceCore(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
+LINK : warning LNK4217: symbol '?init@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::init(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
+LINK : warning LNK4217: symbol '?update@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::update(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
+LINK : warning LNK4217: symbol '?render@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::render(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
+LINK : warning LNK4217: symbol '?dispose@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::dispose(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
   Bounce.vcxproj -> C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.dll

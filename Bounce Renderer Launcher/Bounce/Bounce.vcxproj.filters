@@ -29,5 +29,8 @@
     <ClCompile Include="source\Bounce\Core\BounceCore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Bounce\BounceLauncher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
