@@ -1,14 +1,14 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   BounceLauncher.cpp
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.cpp(5,35): warning C4273: 'bnc::BounceLauncher::BounceLauncher': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.h(11,3): message : see previous definition of '{ctor}'
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.cpp(6,36): warning C4273: 'bnc::BounceLauncher::operator ()': inconsistent dll linkage
-C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.h(12,8): message : see previous definition of '()'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\outsourced\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Logging\Logger.h(15,53): warning C4251: 'bnc::Logger::_coreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'bnc::Logger'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\outsourced\spdlog\include\spdlog\details\registry.h(33): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\Logging\Logger.h(16,55): warning C4251: 'bnc::Logger::_clientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'bnc::Logger'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\outsourced\spdlog\include\spdlog\details\registry.h(33): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.cpp(15,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\Bounce\source\Bounce\BounceLauncher.cpp(18,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
      Creating library C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.lib and object C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.exp
-LINK : warning LNK4217: symbol '??0BounceCore@bnc@@QEAA@XZ (public: __cdecl bnc::BounceCore::BounceCore(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
-LINK : warning LNK4217: symbol '?init@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::init(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
-LINK : warning LNK4217: symbol '?update@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::update(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
-LINK : warning LNK4217: symbol '?render@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::render(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
-LINK : warning LNK4217: symbol '?dispose@BounceCore@bnc@@QEAAXXZ (public: void __cdecl bnc::BounceCore::dispose(void))' defined in 'BounceCore.obj' is imported by 'BounceLauncher.obj' in function '"public: char __cdecl bnc::BounceLauncher::operator()(void)" (??RBounceLauncher@bnc@@QEAADXZ)'
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Bounce.vcxproj -> C:\Users\User\Desktop\PBR Engine\Bounce Renderer Launcher\bin\Debug-Windows-x64\Bounce\Bounce.dll

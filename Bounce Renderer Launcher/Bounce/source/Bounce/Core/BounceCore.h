@@ -1,5 +1,6 @@
 #pragma once
 #include <Bounce/Bounce.h>
+#include <GLFW/glfw3.h>
 
 namespace bnc {
 

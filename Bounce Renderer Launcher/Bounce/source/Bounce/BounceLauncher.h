@@ -9,6 +9,7 @@ namespace bnc {
 
 	public:
 		BounceLauncher();
+		char launch();
 		char operator () ();
 	};
 

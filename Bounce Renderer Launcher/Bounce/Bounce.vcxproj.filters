@@ -24,12 +24,18 @@
     <ClInclude Include="source\Bounce\BounceLauncher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\Bounce\Logging\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Bounce\Core\BounceCore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\Bounce\BounceLauncher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Bounce\Logging\Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
