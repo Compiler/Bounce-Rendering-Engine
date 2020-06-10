@@ -7,5 +7,6 @@
 
 int main(){
 	bnc::BounceLauncher launcher;
+
 	return launcher.launch();
 }

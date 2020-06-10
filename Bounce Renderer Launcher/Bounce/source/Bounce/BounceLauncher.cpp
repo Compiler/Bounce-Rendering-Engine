@@ -1,5 +1,4 @@
 #include "BounceLauncher.h"
-#include <Bounce/Logging/Logger.h>
 
 namespace bnc {
 
@@ -16,8 +15,6 @@ namespace bnc {
 			runner.update();
 			runner.render();
 			elapsedTimePerFrame = glfwGetTime() - startFrameTime;
-			BOUNCE_CORE_DEBUG("Sup\t{}", elapsedTimePerFrame);
-			BOUNCE_DEBUG("Sup2\t{}", elapsedTimePerFrame);
 		}
 		runner.dispose();
 		return 0;

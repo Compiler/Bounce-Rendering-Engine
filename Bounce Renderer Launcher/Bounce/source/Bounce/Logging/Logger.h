@@ -26,29 +26,29 @@ namespace bnc {
 
 
 
-
-#ifdef _DEBUG
-
-#define BOUNCE_CORE_TRACE(...) ::bnc::Logger::getCoreLogger()->trace(__VA_ARGS__)
-#define BOUNCE_CORE_DEBUG(...) ::bnc::Logger::getCoreLogger()->debug(__VA_ARGS__)
-#define BOUNCE_CORE_LOG(...) ::bnc::Logger::getCoreLogger()->info(__VA_ARGS__)
-#define BOUNCE_CORE_WARN(...) ::bnc::Logger::getCoreLogger()->warn(__VA_ARGS__)
-#define BOUNCE_CORE_ERROR(...) ::bnc::Logger::getCoreLogger()->error(__VA_ARGS__)
-#define BOUNCE_CORE_FATAL(...) {::bnc::Logger::getCoreLogger()->critical(__VA_ARGS__); DebugBreak();}
-
-#else 
-#define BOUNCE_CORE_TRACE(...)
-#define BOUNCE_CORE_DEBUG(...)
-#define BOUNCE_CORE_LOG(...) 
-#define BOUNCE_CORE_WARN(...)
-#define BOUNCE_CORE_ERROR(...) 
-#define BOUNCE_CORE_FATAL(...) 
-
-#endif
-
-#define BOUNCE_TRACE(...) ::bnc::Logger::getClientLogger()->trace(__VA_ARGS__)
-#define BOUNCE_DEBUG(...) ::bnc::Logger::getClientLogger()->debug(__VA_ARGS__)
-#define BOUNCE_LOG(...) ::bnc::Logger::getClientLogger()->info(__VA_ARGS__)
-#define BOUNCE_WARN(...) ::bnc::Logger::getClientLogger()->warn(__VA_ARGS__)
-#define BOUNCE_ERROR(...) ::bnc::Logger::getClientLogger()->error(__VA_ARGS__)
-#define BOUNCE_FATAL(...) ::bnc::Logger::getClientLogger()->critical(__VA_ARGS__)
+//
+//#ifdef _DEBUG
+//
+//#define BOUNCE_CORE_TRACE(...) ::bnc::Logger::getCoreLogger()->trace(__VA_ARGS__)
+//#define BOUNCE_CORE_DEBUG(...) ::bnc::Logger::getCoreLogger()->debug(__VA_ARGS__)
+//#define BOUNCE_CORE_LOG(...) ::bnc::Logger::getCoreLogger()->info(__VA_ARGS__)
+//#define BOUNCE_CORE_WARN(...) ::bnc::Logger::getCoreLogger()->warn(__VA_ARGS__)
+//#define BOUNCE_CORE_ERROR(...) ::bnc::Logger::getCoreLogger()->error(__VA_ARGS__)
+//#define BOUNCE_CORE_FATAL(...) {::bnc::Logger::getCoreLogger()->critical(__VA_ARGS__); DebugBreak();}
+//
+//#else 
+//#define BOUNCE_CORE_TRACE(...)
+//#define BOUNCE_CORE_DEBUG(...)
+//#define BOUNCE_CORE_LOG(...) 
+//#define BOUNCE_CORE_WARN(...)
+//#define BOUNCE_CORE_ERROR(...) 
+//#define BOUNCE_CORE_FATAL(...) 
+//
+//#endif
+//
+//#define BOUNCE_TRACE(...) ::bnc::Logger::getClientLogger()->trace(__VA_ARGS__)
+//#define BOUNCE_DEBUG(...) ::bnc::Logger::getClientLogger()->debug(__VA_ARGS__)
+//#define BOUNCE_LOG(...) ::bnc::Logger::getClientLogger()->info(__VA_ARGS__)
+//#define BOUNCE_WARN(...) ::bnc::Logger::getClientLogger()->warn(__VA_ARGS__)
+//#define BOUNCE_ERROR(...) ::bnc::Logger::getClientLogger()->error(__VA_ARGS__)
+//#define BOUNCE_FATAL(...) ::bnc::Logger::getClientLogger()->critical(__VA_ARGS__)
